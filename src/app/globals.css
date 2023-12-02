@@ -4,15 +4,8 @@
 
 
 /* globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
-
 /* Your other global styles go here */
-*{
-  ::selection {
-    color: black;
-    background: rgb(247, 155, 255);
-  }
-}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -36,4 +29,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+*{
+  ::selection {
+    color: black;
+    background: rgb(247, 155, 255);
+  }
 }
