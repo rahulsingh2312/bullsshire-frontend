@@ -11,7 +11,7 @@ export default function xtraord() {
         <Image src={MirrorLaptopOnly} />
     </div>
     </div> 
-    <Image className='md:-mt-40 -mt-20 md:ml-80' src={MadeSimple} />
+    <Image className='md:-mt-40 -mt-20 md:mx-auto' src={MadeSimple} />
   
     </div>
     )
