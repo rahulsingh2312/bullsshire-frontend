@@ -1,6 +1,6 @@
 // 'use client'
 import { oxygen } from '../font'
-import X from './TwitterX.png'
+import { FaXTwitter } from "react-icons/fa6"
 // import { useState, useEffect } from 'react';
 import Image from 'next/image'
 // import User from './Male User.png'
@@ -16,7 +16,7 @@ export default function Twitter(){
               {/* <Image src={User} alt="user" /> */}
             </div>
             <div className="username">{item.username}</div>
-            <Image src={X} className='' alt='twi logo' />
+          <FaXTwitter size={40}/>
           </div>
           <div className="content">{item.content}</div>
           <div className="timestamp">{item.timestamp}</div>
