@@ -52,7 +52,7 @@ const config = {
 export default function Saq() {
     return (
         <>
-        <div className="faq-container md:flex mt-20 md:ml-40 md:mr-40"> {/* Apply additional styling using a CSS class */}
+        <div className="faq-container md:flex mt-20 "> {/* Apply additional styling using a CSS class */}
          <Image src={Iagfaq} alt="faq"/>
            <div className="md:mt-40 mt-20 md:text-4xl ">
             <Faq
