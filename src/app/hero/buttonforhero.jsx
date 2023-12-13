@@ -1,7 +1,10 @@
 'use client'
 import { inknutAntiqua } from '../font'
 import Image from 'next/image'
-import Brokers from './brokers.png'
+import  A from './brokers/a.png'
+import B from './brokers/b.png'
+import C from './brokers/c.png'
+import D from './brokers/d.png'
 import  Imag  from './image2.png'
 export default function buttonforhero() {
     return (
@@ -11,7 +14,12 @@ export default function buttonforhero() {
         <div className="md:w-40 rounded w-32 h-12 ml-2 bg-black flex justify-center items-center border-white border-solid border-2" >  Login</div>
         </div>
         <div className="ml-5 md:-ml-2 md:flex md:mt-4 md:justify-center"><div className='md:-ml-48 md:mr-7' style={{ height: '100%', color: 'rgba(231.82, 231.63, 231.63, 0.64)', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}>supported on India’s largest brokers</div>
-   <Image src={Brokers}/>
+<div className='flex'>
+    <Image className='mx-1' src={A} alt='brokers '/> 
+    <Image className='mx-1' src={D} alt='brokers '/>
+    <Image className='mx-1' src={C} alt='brokers '/>
+    <Image className='mx-1' src={B} alt='brokers '/>
+</div>
    </div>
    <div className='ml-5  md:flex md:justify-center md:-ml-48  md:-mt-0' style={{width: '100%', height: '100%'}}><span style={{color: '#8C8796', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}>Dont have a broker account?</span><span style={{color: '#6A607D', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}> </span><span style={{color: '#CAB0FF', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}> &nbsp;Create One!</span></div>
 <div className='ml-10 flex justify-center '> <Image src={Imag} /> </div>
