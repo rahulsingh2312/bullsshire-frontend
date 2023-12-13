@@ -1,8 +1,9 @@
 // 'use client'
 import { oxygen } from '../font'
-import { FaXTwitter } from "react-icons/fa6"
+import { FaXTwitter  } from "react-icons/fa6"
+import { FaRegUser } from "react-icons/fa"
 // import { useState, useEffect } from 'react';
-import Image from 'next/image'
+
 // import User from './Male User.png'
 import Dta from './data.json'
 export default function Twitter(){
@@ -12,7 +13,8 @@ export default function Twitter(){
         <div className="card-content">
           {/* Render the content based on the item */}
           <div className="user-info">
-            <div className="user-image" >
+            <div className="user-image justify-center" >
+              <FaRegUser size={20}/>
               {/* <Image src={User} alt="user" /> */}
             </div>
             <div className="username">{item.username}</div>
