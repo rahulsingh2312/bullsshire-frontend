@@ -53,9 +53,9 @@ export default function Saq() {
     return (
         <>
         <div className="faq-container md:flex mt-20 "> {/* Apply additional styling using a CSS class */}
-         <Image className="w-1/2" src={Iagfaq} alt="faq"/>
-           <div className="md:mt-40 mt-20 md:text-4xl ">
-            <Faq className='w-1/2'
+         <Image className="md:w-1/2" src={Iagfaq} alt="faq"/>
+           <div className="md:mt-40 md:w-1/2 mt-20 md:text-4xl ">
+            <Faq 
                 data={data}
                 styles={styles}
                 config={config}
