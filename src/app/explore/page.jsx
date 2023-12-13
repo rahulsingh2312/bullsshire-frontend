@@ -21,7 +21,7 @@ Login
 
 
 
-<div className="flex ml-3 md:mx-auto mt-10     w-1/2 ">
+<div className="flex mx-3 md:mx-auto mt-10     w-1/2 ">
 
 
 <Image src={Ideas } alt= "idea" />
