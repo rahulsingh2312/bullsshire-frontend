@@ -16,12 +16,19 @@ export default function Navbar() {
        <Hamburger size={20} distance="sm" color="grey" duration={2} toggled={isOpen} toggle={setOpen} /></div>
 
     </div>	  
-	  { isOpen &&  <div className=" -right-10 absolute"> <Image className="" src={Wing} alt="img" /> 
-		  <div>
-           
+	  { isOpen &&  <div className={`${playfairDisplaySC.className} text-2xl   -right-10 absolute`}> <Image className="" src={Wing} alt="img" />
+		 <div
+                className="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2"
+                style={{ textAlign: "left" }}
+              > <div className="pb-10">
+           Portfolio
 		  </div>
-		  <div></div>
-
+		  <div className="pb-10">Strategies</div>
+ <div className="pb-10">
+           Ideas
+		  </div >
+		  <div className="pb-10">About Us</div>
+		    <div className="pb-10">Support </div></div>
 		  </div> }
     </nav>
 
