@@ -2,6 +2,8 @@
 import { playfairDisplaySC } from "./font"
 import { useState } from "react"
 import { Sling as Hamburger } from 'hamburger-react'
+import Wing from './Group 37325.png'
+import Image from 'next/image'
 
 
 export default function navbar() {
@@ -10,9 +12,19 @@ export default function navbar() {
   <div>
     <nav>
   <div className="flex justify-center md:mt-20 mt-10  md:-ml-16 md:text-5xl text-2xl  " >  <div className={`${playfairDisplaySC.className} p-1  `} style={{backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)", WebkitBackgroundClip: 'text', // for Safari
-    color: 'transparent',}}> Bullsshire Traders </div > <div className="md:hidden ml-5"> <Hamburger size={20} distance="sm" color="grey" duration={2} toggled={isOpen} toggle={setOpen} /></div>
-    </div>
+    color: 'transparent',}}> Bullsshire Traders </div > <div className="md:hidden ml-5">
+       <Hamburger size={20} distance="sm" color="grey" duration={2} toggled={isOpen} toggle={setOpen} /></div>
+
+    </div>	  
+	  { isOpen &&  <div className=" -right-10 absolute"> <Image className="" src={Wing} alt="img" /> 
+		  <div>
+           
+		  </div>
+		  <div></div>
+
+		  </div> }
     </nav>
+
   </div>
   )
 }

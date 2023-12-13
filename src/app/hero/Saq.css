@@ -1,0 +1,12 @@
+/* Saq.css */
+
+.faq-container {
+  /* max-width: 600px; Adjust the maximum width according to your design */
+  /* margin: auto; */
+  padding: 20px;
+  /* border: 1px solid #007bff; Add a border for better visibility */
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+/* Add more styles as needed */
