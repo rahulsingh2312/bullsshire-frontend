@@ -6,7 +6,7 @@ import Wing from './Group 37325.png'
 import Image from 'next/image'
 
 
-export default function navbar() {
+export default function Navbar() {
   const [isOpen, setOpen] = useState(false)
   return (
   <div>
