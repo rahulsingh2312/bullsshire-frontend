@@ -6,7 +6,7 @@ import B from './brokers/b.png'
 import C from './brokers/c.png'
 import D from './brokers/d.png'
 import  Imag  from './image2.png'
-export default function buttonforhero() {
+export default function Buttonforhero() {
     return (
     <div>
         <div className={`${inknutAntiqua.className} flex mt-6 md:mt-16 md:-ml-96 md:justify-center text-xl`}>

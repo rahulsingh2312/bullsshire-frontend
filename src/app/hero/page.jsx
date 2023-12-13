@@ -7,7 +7,7 @@ import Xtraord from './xtraord.jsx'
 import Twitter from './twitter.jsx'
 import Faq from './faq.jsx'
 import Footer from './footer.jsx'
-export default function hero() {
+export default function Hero() {
     return (
             //   <MantineProvider>
         <div>

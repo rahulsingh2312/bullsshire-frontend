@@ -6,7 +6,7 @@ import Between from './svgdesign.svg'
 import { inknutAntiqua } from '../font'
 import Mobile from './1meansphone2islaptop1.png'
 import Notmoile from './1meansphone2islaptop2.png'
-export default function xtraord() {
+export default function Xtraord() {
     return (
     <div>
         <div className='md:flex'>

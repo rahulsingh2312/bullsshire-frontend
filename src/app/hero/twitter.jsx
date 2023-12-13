@@ -5,7 +5,7 @@ import X from './TwitterX.png'
 import Image from 'next/image'
 // import User from './Male User.png'
 import Dta from './data.json'
-export default function twitter(){
+export default function Twitter(){
   const renderCards = (startIndex, endIndex) => {
     return Dta.slice(startIndex, endIndex).map((item) => (
       <div key={item.id} className={`card ${item.id % 5 === 0 ? 'new-line ' : ''}`}>
