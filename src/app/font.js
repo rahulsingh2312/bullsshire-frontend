@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display_SC  , Oxygen , Inknut_Antiqua} from 'next/font/google'
+import { Inter, Playfair_Display_SC ,Red_Rose , Oxygen , Inknut_Antiqua} from 'next/font/google'
  
 export const inter = Inter({
   subsets: ['latin'],
@@ -12,6 +12,12 @@ export const playfairDisplaySC = Playfair_Display_SC({
 })
 
 export const oxygen = Oxygen({
+  subsets: ['latin'],
+  display: 'swap',
+  weight:'400'
+})
+
+export const redRose = Red_Rose({
   subsets: ['latin'],
   display: 'swap',
   weight:'400'
