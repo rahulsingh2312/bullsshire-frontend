@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Faq from "react-faq-component";
 import Iagfaq from './faq.svg'
-import B4foot from './b4footer.png'
+
 import "./Saq.css"; // Import a separate CSS file for styling
 
 const data = {
@@ -63,10 +63,7 @@ export default function Saq() {
             </div>
           
         </div>
-        <div className="flex justify-center">
-                <Image src={B4foot} alt ="desging" />
-
-            </div>
+       
         </>
     );
 }

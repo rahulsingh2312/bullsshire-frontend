@@ -5,10 +5,14 @@ import './Footer.css';
 import { playfairDisplaySC , oxygen } from '../font'
 import {   IoLocationSharp , IoCallOutline , IoMailOutline  , } from "react-icons/io5";
 import { FaRedditSquare , FaTelegram,FaTwitter , FaInstagram} from "react-icons/fa"
-
+import B4foot from './b4footer.png'
 export default function Footer () {
   return (
 <>
+<div className="flex justify-center">
+                <Image src={B4foot} alt ="desging" />
+
+            </div>
 <div>
   <div className={`flex justify-center ${oxygen.className} md:text-2xl text-xs`}>
 <Image className='w-40 md:w-1/5' src={Logo} alt="inlogo" />
