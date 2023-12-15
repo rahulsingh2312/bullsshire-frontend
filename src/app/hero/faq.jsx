@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Faq from "react-faq-component";
-import Iagfaq from './faq.svg'
+import Iagfaq from './images/faq.svg'
 
 import "./Saq.css"; // Import a separate CSS file for styling
 

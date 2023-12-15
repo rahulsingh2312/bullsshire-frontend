@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import Logo from './LOGO.png';
+import Logo from './images/LOGO.png';
 import './Footer.css';
 import { playfairDisplaySC , oxygen } from '../font'
 import {   IoLocationSharp , IoCallOutline , IoMailOutline  , } from "react-icons/io5";
 import { FaRedditSquare , FaTelegram,FaTwitter , FaInstagram} from "react-icons/fa"
-import B4foot from './b4footer.png'
+import B4foot from './images/b4footer.png'
 export default function Footer () {
   return (
 <>

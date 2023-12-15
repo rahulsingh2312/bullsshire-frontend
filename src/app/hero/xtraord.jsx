@@ -1,11 +1,11 @@
-import Mirrordesign from './mirrordesign.png'
-import MirrorLaptopOnly from './mirrrorlaptoponly.png'
-import Bars from './bars.png'
+import Mirrordesign from './images/mirrordesign.png'
+import MirrorLaptopOnly from './images/mirrrorlaptoponly.png'
+import Bars from './images/bars.png'
 import Image from 'next/image'
-import Between from './svgdesign.svg'
+import Between from './images/svgdesign.svg'
 import { inknutAntiqua } from '../font'
-import Mobile from './1meansphone2islaptop1.png'
-import Notmoile from './1meansphone2islaptop2.png'
+import Mobile from './images/1meansphone2islaptop1.png'
+import Notmoile from './images/1meansphone2islaptop2.png'
 export default function Xtraord() {
     return (
     <div>
@@ -15,7 +15,7 @@ export default function Xtraord() {
         <Image src={MirrorLaptopOnly} alt="cool af design" />
     </div>
     </div> 
-    <Image className='  md:mx-auto' width={1200} src={Bars} />
+    <Image className='  md:mx-auto' alt="bars" width={1200} src={Bars} />
   
 
   <div className={`${inknutAntiqua.className} flex mt-6 md:mt-16  justify-center  `}>
@@ -27,7 +27,7 @@ export default function Xtraord() {
         <div className='flex mt-10 justify-center  md:hidden'>
         <Image src={Mobile} alt="duh" />
     </div>
-   <div className='hidden md:flex md:-mt-60 justify-center  md:block'>
+   <div className='hidden md:flex md:-mt-60 justify-center  '>
         <Image src={Notmoile} alt="duh" />
     </div>
     </div>

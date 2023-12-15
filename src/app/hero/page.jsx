@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Logo from './LOGO.png'
+import Logo from './images/LOGO.png'
 // import { MantineProvider } from '@mantine/core';
 import { oxygen} from "../font"
 import Buttonforhero from './buttonforhero'
