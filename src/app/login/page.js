@@ -4,6 +4,7 @@ import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/com
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import Bottomnav from '../bottomnav/bottomnav'
 import './login.css'
 // import { FunctionSquare } from 'lucide-react';
 const LoginForm = () => {
@@ -90,8 +91,8 @@ console.log(data)
  
 
   return (
-    <>
-         <div className='des'></div>
+    <div className='overflow-x-hidden'>
+         <div className='overflow-x-hidden md:w-screen des'></div>
     <div className=" mt-60 login-container">
     
 
@@ -126,8 +127,8 @@ console.log(data)
         <div className=" flex justify-center items-center user-profile">
           {/* <h1>User Profile</h1> */}
       <div>
-        <p>Name: {userProfile.ClientName}</p>
-        <p>Email: {userProfile.EmailId}</p>
+        <p className='flex justify-center'>  {userProfile.ClientName}</p>
+        <p> {userProfile.EmailId}</p>
         <p>PAN Card Number: {userProfile.PAN}</p>
         <p>Phone Number: {userProfile.MobileNo}</p>
         {userProfile && (
@@ -140,7 +141,9 @@ console.log(data)
       )}
 
     </div>
-    </>
+    <div className='md:hidden'>
+<Bottomnav active={'profile'} /></div>
+    </div>
   );
 
 

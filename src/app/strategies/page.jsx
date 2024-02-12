@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import Logo from './images/biglogo.png'
+import Logo from '../ideas/images/biglogo.png'
 import {playfairDisplaySC , redRose } from '../font'
 import Designright from '../hero/images/b4footer.png'
 import Bottomnav from '../bottomnav/bottomnav'
@@ -72,7 +72,7 @@ cause Investing should be effortless. </div>
       </div>
 
 <div className='md:hidden'>
-<Bottomnav active={'ideas'} /></div>
+<Bottomnav active={'strategies'} /></div>
         </>
     )
 }

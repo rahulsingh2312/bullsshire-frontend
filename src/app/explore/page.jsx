@@ -10,6 +10,7 @@ import Horn from './images/horn.png'
 import Storyi from './images/storyidea.png'
 import Storys from './images/storystrat.png'
 import Footer from '../hero/footer';
+import home from '../page';
 export default function Explore(){
 
     return(
@@ -53,7 +54,7 @@ Login
 </div>
 <div className='md:hidden'>
 
-<Bottomnav  />
+<Bottomnav active={'home'} />
 </div>
 <div className='hidden md:block'>
   <Footer />
