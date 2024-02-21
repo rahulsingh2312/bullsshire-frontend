@@ -10,7 +10,7 @@ export default function Footer () {
   return (
 <>
 <div className="flex justify-center">
-                <img src='/b4footer' alt ="desging" />
+                <img src='/b4footer.png' alt ="desging" />
 
             </div>
 <div>
