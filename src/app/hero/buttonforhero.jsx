@@ -25,7 +25,7 @@ export default function Buttonforhero() {
    <div className='ml-5  md:flex md:justify-center md:-ml-48  md:-mt-0' style={{width: '100%', height: '100%'}}><span style={{color: '#8C8796', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}>Dont have a broker account?</span><span style={{color: '#6A607D', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}> </span><span style={{color: '#CAB0FF', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}> &nbsp;Create One!</span></div>
 <div className='ml-10 flex justify-center '> <img src='/img2' alt="simple" /> </div>
 <div className='flex justify-center md:-mt-10 custom:-mt-72 mb-20 -mt-10 '>
-<Link href="/explore" ><div className={`${inknutAntiqua.className} md:w-52 md:h-16 rounded w-32 h-12 text-xl text-black flex justify-center items-center ml-0  bg-gray-100`} > Explore </div></Link>
+
 </div>
         </div>
     )
