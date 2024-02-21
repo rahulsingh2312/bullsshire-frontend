@@ -13,9 +13,9 @@ export default function Twitter(){
         <div className="card-content">
           {/* Render the content based on the item */}
           <div className="user-info">
-            <div className="user-image justify-center" >
+            <div className="user-img justify-center" >
               <FaRegUser size={20}/>
-              {/* <Image src={User} alt="user" /> */}
+              {/* <img src={User} alt="user" /> */}
             </div>
             <div className="username">{item.username}</div>
           <FaXTwitter size={40}/>
@@ -44,8 +44,8 @@ export default function Twitter(){
 
     <div style={{width: 489, height: 306, left: 24, top: 36, position: 'absolute', background: 'rgba(198.07, 105.19, 255, 0.05)', boxShadow: '46px 46px 40px rgba(0, 0, 0, 0.25)', borderRadius: 8, border: '3px #FFE7E7 solid', backdropFilter: 'blur(50px)'}}></div>
     <div style={{width: 485, height: 306, left: 24, top: 50, position: 'absolute', background: '#343434'}} />
-    <Image style={{width: 67, height: 76, left: 40, top: 80, position: 'absolute'}} src={User} />
-    <Image style={{width: 63, height: 63, left: 346, top: 36, position: 'absolute'}} src={X} />
+    <img style={{width: 67, height: 76, left: 40, top: 80, position: 'absolute'}} src={User} />
+    <img style={{width: 63, height: 63, left: 346, top: 36, position: 'absolute'}} src={X} />
     <div style={{width: 208, height: 30, left: 126, top: 99, position: 'absolute', color: 'white', fontSize: 21, fontFamily: 'Oxygen', fontWeight: '400', wordWrap: 'break-word'}}>USERNAME</div>
     <div style={{width: 208, height: 30, left: 126, top: 129, position: 'absolute', color: 'white', fontSize: 15, fontFamily: 'Oxygen', fontWeight: '400', wordWrap: 'break-word'}}>@username</div>
     <div style={{width: 336, height: 83, left: 59, top: 175, position: 'absolute', color: 'white', fontSize: 20, fontFamily: 'Oxygen', fontWeight: '400', wordWrap: 'break-word'}}>I love Bullsshire Traders so much : ) <br/>best trading platform .</div>

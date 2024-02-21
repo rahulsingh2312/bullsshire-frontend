@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
-import Image from "next/image";
+// import img from "next/img";
 import Faq from "react-faq-component";
-import Iagfaq from './images/faq.svg'
+// import Iagfaq from './imgs/faq.svg'
 
 import "./Saq.css"; // Import a separate CSS file for styling
 
@@ -53,7 +53,7 @@ export default function Saq() {
     return (
         <>
         <div className="faq-container md:flex mt-20 "> {/* Apply additional styling using a CSS class */}
-         <Image className="md:w-1/2" src={Iagfaq} alt="faq"/>
+         <img className="md:w-1/2" src='/faq.svg' alt="faq"/>
            <div className="md:mt-40 md:w-1/2 mt-20 md:text-4xl ">
             <Faq 
                 data={data}

@@ -1,25 +1,25 @@
-import Mirrordesign from './images/mirrordesign.png'
-import MirrorLaptopOnly from './images/mirrrorlaptoponly.png'
-import Bars from './images/bars.png'
-import LaptopBars from './images/laptopbars.png'
-import Image from 'next/image'
-import Between from './images/svgdesign.svg'
+// import Mirrordesign from './imgs/mirrordesign.png'
+// import MirrorLaptopOnly from './imgs/mirrrorlaptoponly.png'
+// import Bars from './imgs/bars.png'
+// import LaptopBars from './imgs/laptopbars.png'
+// import img from 'next/img'
+// import Between from './imgs/svgdesign.svg'
 import { inknutAntiqua } from '../font'
-import Mobile from './images/1meansphone2islaptop1.png'
-import Notmoile from './images/1meansphone2islaptop2.png'
+// import Mobile from './imgs/1meansphone2islaptop1.png'
+// import Notmoile from './imgs/1meansphone2islaptop2.png'
 import Link from 'next/link'
 export default function Xtraord() {
     return (
     <div>
         <div className='md:flex'>
-    <Image src={Mirrordesign} alt="i call it art" />
+    <img src='/mirrordesign.png' alt="i call it art" />
     <div className='hidden md:ml-80  md:block'>
-        <Image src={MirrorLaptopOnly} alt="cool af design" />
+        <img src='/mirrrorlaptoponly.png' alt="cool af design" />
         
     </div>
     </div> 
-    {/* <Image className='  md:mx-auto' alt="bars" width={1200} src={Bars} /> */}
-    <Image className='  md:mx-auto' alt="bars" width={1200} src={LaptopBars} />
+    {/* <img className='  md:mx-auto' alt="bars" width={1200} src={Bars} /> */}
+    <img className='  md:mx-auto' alt="bars" width={1200} src='/laptopbars.png' />
     
     {/* <div style={{width: '100%', height: '100%', position: 'relative', zIndex: 10}}>
     <div style={{width: 239, height: 2, left: 102.89, top: 239, position: 'absolute', transform: 'rotate(-90deg)', transformOrigin: '0 0', background: 'linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.60) 51%, rgba(0, 0, 0, 0) 100%)'}} />
@@ -36,15 +36,15 @@ export default function Xtraord() {
 
   <div className={`${inknutAntiqua.className} flex mt-6 md:mt-16  justify-center  `}>
   <Link href="/explore" >     <div className="md:w-40 rounded w-24 h-12 text-black flex justify-center items-center ml-6  bg-gray-100" > Explore </div></Link>
-        <Image width={"50"} src={Between} alt="design u not missin on anythin" />
+        <img width={"50"} src='/svgdesign.svg' alt="design u not missin on anythin" />
         <Link href="/login" >       <div className="md:w-40 rounded w-24 h-12  bg-black flex justify-center items-center border-white border-solid border-2" >  Login</div></Link>
         </div>
 
         <div className='flex mt-10 justify-center  md:hidden'>
-        <Image src={Mobile} alt="duh" />
+        <img src='/1meansphone2islaptop1.png' alt="duh" />
     </div>
    <div className='hidden md:flex md:-mt-60 justify-center  '>
-        <Image src={Notmoile} alt="duh" />
+        <img src='/1meansphone2islaptop2.png' alt="duh" />
     </div>
     </div>
     )

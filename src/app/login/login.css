@@ -7,10 +7,19 @@ width: 90%;
 
 background: radial-gradient(55.41% 70.45% at 109.41% 75.28%, #00FFC2 0%, rgba(32, 108, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(138.81% 315.1% at 15.4% 87.64%, #FFFFFF 0%, rgba(211, 117, 255, 0.902202) 29.2%, rgba(30, 0, 215, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(65.56% 87.99% at 17.06% 29.94%, #FF0000 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(106.86% 132.12% at 93.47% 11.13%, #4C00AC 0%, rgba(255, 255, 255, 0.588342) 26.46%, rgba(218, 137, 231, 0.367184) 100%, rgba(227, 57, 255, 0.62) 100%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 background-blend-mode: normal, hard-light, normal, normal;
-transform: rotate(4.37deg);
+transform: rotate(16.37deg);
 
 /* border-radius: 50%; */
 }
+@media only screen and (min-width: 768px) {
+  .des {
+    height: 99.68px;
+    width: 98%;
+    transform: rotate(-2.37deg) !important; /* Add !important to override any other conflicting rules */
+  }
+}
+
+
 
 body{
     overflow-x: hidden;

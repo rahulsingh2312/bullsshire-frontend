@@ -3,6 +3,8 @@ import { useState , useEffect } from 'react';
 import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
+// import img from 'next/img'
+// import Char from './char.png'
 import { Button } from "@/components/ui/button"
 import Bottomnav from '../bottomnav/bottomnav'
 import './login.css'
@@ -12,8 +14,13 @@ const LoginForm = () => {
   const [secretKey, setSecretKey] = useState('');
   const [userProfile, setUserProfile] = useState(null);
   const [error, setError] = useState('');
-// profile 
+// profile
 
+
+//  <p> {userProfile.EmailId}</p>
+          // <p>PAN Card Number: {userProfile.PAN}</p>
+          // <p>Phone Number: {userProfile.MobileNo}</p>
+//
 useEffect(() => {
   // Check if token exists in session storage
   const storedToken = sessionStorage.getItem('token');
@@ -43,7 +50,7 @@ const fetchUserProfile = async (token) => {
  // Store the token in session storage
 console.log(data)
  // Fetch user profile using the obtained token
-//  
+//
 
     setUserProfile(data.result  );
   } catch (err) {
@@ -56,6 +63,44 @@ console.log(data)
     // Clear the user profile state
     setUserProfile(null);
   };
+
+  //balance
+
+
+
+const [balanceData, setBalanceData] = useState(null);
+
+useEffect(() => {
+  // Fetch balance information when the component mounts
+  fetchBalance();
+}, []);
+
+const fetchBalance = async () => {
+  try {
+    const response = await fetch('https://ttblaze.iifl.com/interactive/user/balance?clientID=SYMP', {
+      headers: {
+        'Content-Type': 'application/json',
+        'authorization': sessionStorage.getItem('token') // Include the token if required
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch balance');
+    }
+
+    const data = await response.json();
+    setBalanceData(data.result);
+    console.log(data);
+    console.log(balanceData);
+  } catch (err) {
+    console.error('Error fetching balance:', err);
+  }
+};
+
+
+
+
+
 
 // llogin
   const handleSubmit = async (e) => {
@@ -88,18 +133,18 @@ console.log(data)
     }
 
   };
- 
+
 
   return (
     <div className='overflow-x-hidden'>
-         <div className='overflow-x-hidden md:w-screen des'></div>
+         <div className='overflow-x-hidden des'></div>
     <div className=" mt-60 login-container">
-    
+
 
 
 {!userProfile &&  <Card className="mx-auto  max-w-sm">
       <CardHeader className="space-y-1">
-     
+
         <CardTitle className="text-2xl font-bold">Login with Symphony</CardTitle>
         <CardDescription>Enter your appKey and secretKey to login to your account</CardDescription>
       </CardHeader>
@@ -124,20 +169,40 @@ console.log(data)
 }
     {error && <p className="error-message">{error}</p>}
       {  userProfile && (
-        <div className=" flex justify-center items-center user-profile">
+        <>
+       <div className="flex mx-auto mb-10 justify-center items-center w-40 h-40 bg-black rounded-full">
+  <div className="md:-mt-40 relative w-36 h-36 overflow-hidden rounded-full">
+    <img src='/char.png' alt="char" className="object-cover w-full h-full rounded-full" />
+  </div>
+</div>
+
+
+        <div className="  flex justify-center items-center user-profile">
           {/* <h1>User Profile</h1> */}
+
       <div>
-        <p className='flex justify-center'>  {userProfile.ClientName}</p>
-        <p> {userProfile.EmailId}</p>
-        <p>PAN Card Number: {userProfile.PAN}</p>
-        <p>Phone Number: {userProfile.MobileNo}</p>
+        <p style={{
+  fontFamily: 'Poppins',
+  fontStyle: 'normal',
+  fontWeight: 700,
+
+  lineHeight: '30px',
+  color: '#FFFFFF'
+}} className='flex md:-mt-20  text-3xl justify-center'>  {userProfile.ClientName}</p>
+<div>
+<div> <p> {balanceData}</p> </div>
+Balance 
+
+</div>
+
+
         {userProfile && (
         <button onClick={handleLogout}>Logout</button>
       )}
       </div>
-      
+
         </div>
-        
+        </>
       )}
 
     </div>

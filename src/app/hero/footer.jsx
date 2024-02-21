@@ -1,21 +1,21 @@
 import React from 'react';
-import Image from 'next/image';
-import Logo from './images/LOGO.png';
+// import img from 'next/img';
+// import Logo from './imgs/LOGO.png';
 import './Footer.css';
 import { playfairDisplaySC , oxygen } from '../font'
 import {   IoLocationSharp , IoCallOutline , IoMailOutline  , } from "react-icons/io5";
 import { FaRedditSquare , FaTelegram,FaTwitter , FaInstagram} from "react-icons/fa"
-import B4foot from './images/b4footer.png'
+// import B4foot from './imgs/b4footer.png'
 export default function Footer () {
   return (
 <>
 <div className="flex justify-center">
-                <Image src={B4foot} alt ="desging" />
+                <img src='/b4footer' alt ="desging" />
 
             </div>
 <div>
   <div className={`flex justify-center ${oxygen.className} md:text-2xl text-xs`}>
-<Image className='w-40 md:w-1/5' src={Logo} alt="inlogo" />
+<img className='w-40 md:w-1/5' src='/LOGO.png' alt="inlogo" />
 <div className='md:ml-40 ml-5 mt-7 md:mt-20'>
   <div className="flex">
    <IoLocationSharp className='mr-2 mt-1' /> Andheri , India

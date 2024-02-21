@@ -1,8 +1,8 @@
 'use client'
-import Image from 'next/image'
-import Logo from '../ideas/images/biglogo.png'
+// import img from 'next/img'
+// import Logo from '../ideas/imgs/biglogo.png'
 import {playfairDisplaySC , redRose } from '../font'
-import Designright from '../hero/images/b4footer.png'
+// import Designright from '../hero/imgs/b4footer.png'
 import Bottomnav from '../bottomnav/bottomnav'
 import { useState } from 'react'
 
@@ -25,7 +25,7 @@ export default function Pages(){
 
 <div className={`${redRose.className}`}>
         <div className='  flex' >
-            <div className="md:ml-20  w-9/12 md:w-auto  mt-5" > <Image  src={Logo} alt="logoig" />  </div>
+            <div className="md:ml-20  w-9/12 md:w-auto  mt-5" > <img  src='/biglogo.png' alt="logoig" />  </div>
             <div className="hidden md:flex mt-40   md:justify-center md:text-4xl text-2xl ml-10">
         <div  >
 
@@ -35,7 +35,7 @@ export default function Pages(){
 cause Investing should be effortless. </div>
         </div>
         </div>
-            <Image src={Designright} className="md:w-96 w-40" alt="art" />
+            <img src='/b4footer.png' className="md:w-96 w-40" alt="art" />
             </div>
         <div className="flex md:hidden mt-10  md:-mt-20 md:justify-center md:text-4xl text-2xl ml-10">
         <div  >
