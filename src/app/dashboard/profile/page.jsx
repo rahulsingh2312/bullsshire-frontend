@@ -133,7 +133,7 @@ Strategies
               <div className="flex w-20 h-20 items-center mt-8 justify-center max-md:ml-0 max-md:w-full">
                 
 
-{user ? (
+{user.photoURL ? (
               <img
                 src={`${user.photoURL}`}
                 alt=""
