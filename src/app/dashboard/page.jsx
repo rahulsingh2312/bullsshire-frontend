@@ -11,6 +11,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore, doc, getDoc ,setDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { signInWithPhoneNumber } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 const firebaseConfig = {
 
@@ -37,15 +38,32 @@ const db = getFirestore(app);
 
 
 function Dashboard() {
-
-
-
-
-
-
-
   const [user, setUser] = useState(null);
   const router = useRouter();
+
+  const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+       
+    const onLogin = (e) => {
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            router.push("/dashboard/profile");
+            console.log(user);
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode, errorMessage)
+        });
+      }
+
+
+
+
+  
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -155,20 +173,19 @@ function Dashboard() {
 
 
 
+    return ( <div className='bg-[#231F2B]'>
 
-    return ( <div>
 
-
-<div className="LOGIN-FORM"> 
+<div className="LOGIN-FORM bg-[#231F2B]"> 
         <div className="flex">
 {/* laptop view design of left while on flex */}
 <div className='overflow-hidden w-3/5 mt-10 hidden md:block' >
-<img className='w-full h-full' width={10} height={10} src='/illustration.svg' alt="illuatration" />
-    
+<img className='w-1/2 h-1/2 mt-40 ml-40' width={10} height={10} src='/form.gif' alt="illuatration" />
+     
 </div>
 
 {/* actual form */}
-<div className='md:w-2/5'>
+<div className='md:w-2/5 bg-[#231F2B]'>
 
 
 <div className={`${redRose.className}` }>
@@ -180,8 +197,8 @@ function Dashboard() {
 
 
 
-<div className="flex md:w-96  justify-center ml-3 items-center h-screen bg-black">
-      <div className="w-full  h-auto bg-black p-8  shadow-lg">
+<div className="flex md:w-96  justify-center ml-3 items-center h-screen bg-[#231F2B]">
+      <div className="w-full  h-auto bg-[#231F2B] p-8  shadow-lg">
         <h1 className="text-2xl md:ml-8 font-bold text-center text-gray-200 mb-8">Login to your Inves now Account</h1>
         <div
           onClick={handleGoogleLogin}
@@ -215,10 +232,15 @@ function Dashboard() {
           </div>
         <input
           type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}  
           placeholder="Email"
           className="w-full md:w-96 text-black h-12 px-4 border border-gray-400  mb-4"
         />
         <input
+         value={password}
+         onChange={(e) => setPassword(e.target.value)} 
+         required
           type="password"
           placeholder="Password"
           className="w-full md:w-96 text-black h-12 px-4 border border-gray-400  mb-4"
@@ -232,14 +254,14 @@ function Dashboard() {
             Forgot Password?
           </a>
         </div>
-        <button className="w-full md:w-96 h-12 bg-red-500 text-white font-semibold ">
+        <button type='submit' onClick={onLogin} className="w-full md:w-96 h-12 bg-red-500 text-white font-semibold ">
           Login
         </button>
       
       
         <div className="m-4 text-gray-300 text-sm">
           <span>Not Registered Yet?</span>
-          <a href="#" className="ml-2 text-pink-500 font-semibold">
+          <a href="dashboard/signup" className="ml-2 text-pink-500 font-semibold">
             Create an account
           </a>
         </div>

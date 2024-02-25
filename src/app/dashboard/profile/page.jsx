@@ -36,12 +36,31 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 export default function EditButton() {
   const [user, setUser] = useState(null);
+
+  
+  
+  
   const router = useRouter();
+  
+  const [userName, setUserName] = useState("");
+
+  
+  
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      console.log(user);
       if (user) {
         setUser(user);
-        
+        // const fetchData = async (user) => {
+          const userDocRef = doc(db, "users", user.uid); 
+          const userDocSnap = await getDoc(userDocRef);
+          if (userDocSnap.exists()) {
+            const userData = userDocSnap.data();
+            setUserName(userData.namefromemail || userData.displayName); // Set the user's name in the state
+          }
+        // };
+    
+        fetchData();
        
       } else {
         setUser(null);
@@ -131,7 +150,7 @@ Strategies
               <div className="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col grow justify-center py-10 whitespace-nowrap  max-md:mt-4">
                   <div className="text-2xl font-bold tracking-tight text-white">
-                  {user ? `Welcome, ${user.displayName}` : "Whtz"}
+                  {user ? `Welcome, ${user.displayName||userName }` : "Whtz"}
                   </div>
                   <div className="text-base leading-6 text-slate-400">
                     Automate your stock market trading
