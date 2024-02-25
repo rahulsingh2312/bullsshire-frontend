@@ -195,7 +195,7 @@ function Dashboard() {
             />
             Continue with Google
           </div>
-         <Link href='/dashboard/phone'><div
+         {/* <Link href='/dashboard/phone'><div
           
           className="w-full md:w-96 bg-white mt-4 text-center text-black font-medium px-4 py-3 border-gray-900 border-2  items-center flex hover:bg-black hover:text-white cursor-pointer transition-all"
         >
@@ -207,7 +207,7 @@ function Dashboard() {
             width={20}
           />
           Continue with Phone
-        </div></Link>
+        </div></Link> */}
           <div className='flex md:ml-5 justify-center items-center my-5'>
  
      ------ OR ------
