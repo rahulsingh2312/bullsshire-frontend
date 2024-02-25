@@ -112,9 +112,9 @@ export default function Pages() {
             <div className='md:hidden'>
                 <Bottomnav active={'ideas'} />
             </div>
-<div className=" hidden md:flex w-1/2 mt-20 md:w-full md:justify-center  ">
-<img src='/storyidea.png' className="mt-20 md:mt-60  " alt="stryide" />
-<img src='/storystrat.png' className="mb-20 md:mb-60 " alt="strystrt" />
+            <div className=" hidden md:flex ml-5 md:ml-0   mt-10  md:w-full w-full md:justify-center ">
+<Link href="/ideas" className=" md:h-1/3 md:w-80" ><img src='/ideas.png' alt="idea"  /></Link>
+<Link href="/strategies" className=" md:h-1/3 md:w-80" ><img src='/star.png' alt="star" /> </Link>
 </div>
 
             {/* Footer */}

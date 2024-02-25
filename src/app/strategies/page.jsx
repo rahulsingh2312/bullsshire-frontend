@@ -27,6 +27,30 @@ const buttonsData = [
         title: "strat 3",
         description: "This is the description for strat 3. It can contain details about the idea and its features."
     },
+    {
+      title: "strat 1",
+      description: "This is the description for strata 1. It can contain details about the idea and its features."
+  },
+  {
+      title: "strat 2 2",
+      description: "This is the description for start 3. It can contain details about the idea and its features."
+  },
+  {
+      title: "strat 3",
+      description: "This is the description for strat 3. It can contain details about the idea and its features."
+  },
+  {
+    title: "strat 1",
+    description: "This is the description for strata 1. It can contain details about the idea and its features."
+},
+{
+    title: "strat 2 2",
+    description: "This is the description for start 3. It can contain details about the idea and its features."
+},
+{
+    title: "strat 3",
+    description: "This is the description for strat 3. It can contain details about the idea and its features."
+}
     // Add more ideas as needed
 ];
   
@@ -65,7 +89,7 @@ cause Investing should be effortless. </div>
 </div>
 </div>
 
-<div className='mt-10 ml-5 flex justify-center' style={{ width: '100%', height: '100%', position: 'relative' }}>
+<div className='mt-10 md:ml-96 ml-5 flex justify-center' style={{ width: '100%', height: '100%', position: 'relative' }}>
         {buttonsData.map((button) => (
           <div
             key={button.id}
@@ -104,9 +128,9 @@ cause Investing should be effortless. </div>
 <Bottomnav active={'strategies'} /></div>
 
 
-<div className=" hidden md:flex w-1/2 mt-20 md:w-full md:justify-center  ">
-<img src='/storyidea.png' className="mt-20 md:mt-60  " alt="stryide" />
-<img src='/storystrat.png' className="mb-20 md:mb-60 " alt="strystrt" />
+<div className=" hidden md:flex ml-5 md:ml-0   mt-10  md:w-full w-full md:justify-center ">
+<Link href="/ideas" className=" md:h-1/3 md:w-80" ><img src='/ideas.png' alt="idea"  /></Link>
+<Link href="/strategies" className=" md:h-1/3 md:w-80" ><img src='/star.png' alt="star" /> </Link>
 </div>
 
 
