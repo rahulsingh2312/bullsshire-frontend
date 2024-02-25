@@ -6,8 +6,9 @@ import Link from 'next/link';
 import Bottomnav from '../bottomnav/bottomnav'
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
+import { signOut, onAuthStateChanged } from "firebase/auth";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore, doc, setDoc } from "firebase/firestore";
+import { getFirestore, doc, getDoc ,setDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { signInWithPhoneNumber } from "firebase/auth";
 
@@ -67,6 +68,7 @@ function Dashboard() {
     signInWithPopup(auth, provider)
       .then((result) => {
         // User signed in
+        console.log(result.user);
         const user = result.user;
         setUser(user);
         saveUserDataToFirestore(user);

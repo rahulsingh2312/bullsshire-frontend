@@ -2,29 +2,89 @@
 import React from 'react';
 import Footer from '../../hero/footer';
 // import { MDBClientOnly, MDBModal } from 'mdb-react-ui-kit';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css'
-import "@fortawesome/fontawesome-free/css/all.min.css"
+import { useState , useEffect } from 'react';
+import { initializeApp } from "firebase/app";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
+import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
+import { useRouter } from "next/navigation";
+
 import Link from 'next/link'
 import Bottomnav from '../../bottomnav/bottomnav.jsx'
 import {playfairDisplaySC , redRose} from "../../font"
-import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
+// import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
+const firebaseConfig = {
 
+  apiKey: "AIzaSyBo0I9TmyEnDgJjXm__CeCjygbjV-mr3ho",
+
+  authDomain: "bullsshire.firebaseapp.com",
+
+  projectId: "bullsshire",
+
+  storageBucket: "bullsshire.appspot.com",
+
+  messagingSenderId: "769524937575",
+
+  appId: "1:769524937575:web:ff568046aec7c0e2b875c2",
+
+  measurementId: "G-6856QVV3DV"
+
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
 export default function EditButton() {
+  const [user, setUser] = useState(null);
+  const router = useRouter();
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        setUser(user);
+        
+       
+      } else {
+        setUser(null);
+        // Reset user's XP if not logged in
+      }
+    });
+    return () => unsubscribe();
+  }, []);
+
+  const handleLogout = () => {
+    signOut(auth)
+      .then(() => {
+        sessionStorage.removeItem("user");
+        setUser(null);
+
+        router.push("/explore");
+      })
+      .catch((error) => {
+        console.error("Error signing out: ", error);
+      });
+  };
+
   return (
 
 
 
 
 
-<div className="bg-black">
+<div className="">
 <nav>
 <div>
 
         <div className='  flex' >
             <div className="md:ml-20 w-20 md:w-40 ml-10 mt-10" > <img  src='/logo.png' alt="logoig" />  </div>
             <div className={`${playfairDisplaySC.className} md:text-4xl md:mt-20 md:mx-auto mt-16 md:block `}  >
-           Bullsshire Traders
+           Bullsshire Traders {user ? (
+            <button onClick={handleLogout}>
+              <img src="/exit.png" height={30} width={30} alt="" />
+            </button>
+          ) : (
+            ""
+          )}
             </div>
+            
 <Link href="/explore" className={` hidden ${playfairDisplaySC.className} mt-20 mx-10 rounded-lg  w-12 h-10 justify-center md:flex items-center text-xl`}>
 Home
 </Link>
@@ -49,16 +109,28 @@ Strategies
           <div>
             <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
               <div className="flex w-20 h-20 items-center mt-8 justify-center max-md:ml-0 max-md:w-full">
-                <img
-                  loading="lazy"
-                  src='/char.png'
-                  className="w-32 rounded-full  max-w-full aspect-square max-md:mt-4"
-                />
+                
+
+{user ? (
+              <img
+                src={`${user.photoURL}`}
+                alt=""
+                className="w-32 rounded-full  max-w-full aspect-square max-md:mt-4"
+              />
+            ) : (
+              <img
+              loading="lazy"
+              src='/char.png'
+              className="w-32 rounded-full  max-w-full aspect-square max-md:mt-4"
+              />
+            )}
+
+
               </div>
               <div className="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col grow justify-center py-10 whitespace-nowrap  max-md:mt-4">
                   <div className="text-2xl font-bold tracking-tight text-white">
-                    Rahul singh
+                  {user ? `Welcome, ${user.displayName}` : "Whtz"}
                   </div>
                   <div className="text-base leading-6 text-slate-400">
                     Automate your stock market trading
@@ -194,7 +266,6 @@ Strategies
 
     </div>
     <div className='md:hidden'>
-
 <Bottomnav active={'profile'} />
 </div>
     <div className='hidden md:block'>
