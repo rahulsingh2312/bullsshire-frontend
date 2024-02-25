@@ -48,22 +48,24 @@ export default function EditButton() {
   
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      console.log(user);
+      console.log("hi"+user);
       if (user) {
-        setUser(user);
+       
         // const fetchData = async (user) => {
           const userDocRef = doc(db, "users", user.uid); 
           const userDocSnap = await getDoc(userDocRef);
+          setUser(user);
           if (userDocSnap.exists()) {
             const userData = userDocSnap.data();
             setUserName(userData.namefromemail || userData.displayName); // Set the user's name in the state
           }
         // };
     
-        fetchData();
+        // fetchData();
        
       } else {
         setUser(null);
+        console.log("user is null else console")
         // Reset user's XP if not logged in
       }
     });

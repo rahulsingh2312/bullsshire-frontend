@@ -49,7 +49,7 @@ function Dashboard() {
   const onSubmit = async (e) => {
     e.preventDefault()
    
-    await createUserWithEmailAndPassword(auth, email, password)
+    await createUserWithEmailAndPassword(auth, email, password , name)
       .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
@@ -129,7 +129,7 @@ function Dashboard() {
 
       if (!docSnap.exists()) {
         await setDoc(docRef, {
-          displayName: user.displayName,
+          displayName: user.displayName || name,
           namefromemail: name,
           email: user.email,
           photoURL: user.photoURL,
