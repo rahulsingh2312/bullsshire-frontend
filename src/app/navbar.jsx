@@ -1,6 +1,7 @@
 'use client'
 import { playfairDisplaySC } from "./font"
 import { useState } from "react"
+import Link from "next/link"
 import { Sling as Hamburger } from 'hamburger-react'
 import { motion } from 'framer-motion';
 
@@ -31,11 +32,11 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="text-white text-xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="pb-5">Portfolio</div>
-          <div className="pb-5">Strategies</div>
-          <div className="pb-5">Ideas</div>
-          <div className="pb-5">About Us</div>
-          <div className="pb-5">Support</div>
+       <Link href="/dashboard"  > <div className="pb-5">Portfolio</div> </Link>
+        <Link href="/strategies" > <div className="pb-5">Strategies</div> </Link>
+        <Link href="/ideas"  ><div className="pb-5">Ideas</div> </Link>
+        <Link href="#aboutus" >   <div className="pb-5">About Us</div> </Link>
+        <Link href="#support" >     <div className="pb-5">Support</div> </Link>
         </div>
       </motion.div>
 

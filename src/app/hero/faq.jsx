@@ -63,7 +63,10 @@ export default function Saq() {
             </div>
           
         </div>
-       
+       <div className="flex justify-center" id='support'>
+                <img src='/b4footer.png' alt ="desging" />
+
+            </div>
         </>
     );
 }

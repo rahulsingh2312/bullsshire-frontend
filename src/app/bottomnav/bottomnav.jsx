@@ -43,7 +43,7 @@ const NavBar = (active) => {
 
       </Link>
       <Link
-        href="/login"
+        href="/dashboard"
         onClick={() => handleLinkClick('profile')}
         className={` hover:text-blue-500 ${activeLink == 'profile' ? 'text-blue-500' : ''}`}
       >

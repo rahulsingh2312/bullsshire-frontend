@@ -14,10 +14,10 @@ export default function Twitter(){
           {/* Render the content based on the item */}
           <div className="user-info">
             <div className="user-img justify-center" >
-              <FaRegUser size={20}/>
-              {/* <img src={User} alt="user" /> */}
+              {/* <FaRegUser size={20}/> */}
+              <img className='w-10 rounded-full ' src={item.image} alt="user" />
             </div>
-            <div className="username">{item.username}</div>
+            <div className="ml-2 username">{item.username}</div>
           <FaXTwitter size={40}/>
           </div>
           <div className="content">{item.content}</div>
@@ -27,7 +27,7 @@ export default function Twitter(){
     ));
   };
     return(
-        <div className='md:-mt-60' >
+        <div className='md:-mt-60'  id='aboutus'>
      <div className={`${oxygen.className} ml-10 mt-20 opacity-50 md:text-4xl  text-xl `}>
      Dont take our word for it 
      </div>
@@ -55,17 +55,17 @@ export default function Twitter(){
 </div> */}
 
 <div className="scrollable-container">
-        {renderCards(0, 10)}
+        {renderCards(0, 9)}
       </div>
 
       <div className="scrollable-container">
-        {renderCards(7,18 )}
+        {renderCards(10,18 )}
       </div>
       <div className="scrollable-container">
-        {renderCards(7,14 )}
+        {renderCards(19,27 )}
       </div>
       <div className="scrollable-container">
-        {renderCards(7,14 )}
+        {renderCards(27,35 )}
       </div>
 
       <div style={{width: '100%', height: '100%', background: 'rgba(255, 132, 252, 0.30)', boxShadow: '200px 200px 200px ', filter: 'blur(200px)'}}></div>

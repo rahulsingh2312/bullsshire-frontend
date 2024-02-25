@@ -9,10 +9,7 @@ import { FaRedditSquare , FaTelegram,FaTwitter , FaInstagram} from "react-icons/
 export default function Footer () {
   return (
 <>
-<div className="flex justify-center">
-                <img src='/b4footer.png' alt ="desging" />
 
-            </div>
 <div>
   <div className={`flex justify-center ${oxygen.className} md:text-2xl text-xs`}>
 <img className='w-40 md:w-1/5' src='/LOGO.png' alt="inlogo" />

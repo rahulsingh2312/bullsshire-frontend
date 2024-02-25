@@ -1,141 +1,330 @@
-[{
-  "id": 1,
-  "user": "User3",
-  "username": "@user3",
-  "content": "Content 3 loremipsum awlrhopqhjr[ohr[H [OT3H",
-  "timestamp": "10:00 AM . 4 DEC 2023"
-},
-{
-  "id": 2,
-  "user": "User4",
-  "username": "@user4",
-  "content": "Content 4",
-  "timestamp": "11:00 AM . 4 DEC 2023"
-},
+[
+  {
+    "id": 1,
+    "user": "Suresh Kumar",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocL9BmMQv3WGrPVON7eJs0LszFFxxo45ixeFJa2uoPBjHGU=s96-c",
+    "username": "@suresh_kumar",
+    "content": "Invesnow.in is amazing! Great investment options and user-friendly interface. I'm loving it! 🚀💰",
+    "timestamp": "10:00 AM . 4 DEC 2023"
+  },
+  {
+    "id": 2,
+    "user": "Priya Patel",
+    "username": "@priya_123",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKH9oGfylTWM1oNsxoEmI6JC3JBD9WzWj_VQzFBZ5a1nQ=s96-c",
+    "content": "I've been using invesnow.in for a while now, and it's been a game-changer for me. Highly recommended! 🌟💼",
+    "timestamp": "11:00 AM . 4 DEC 2023"
+  },
   {
     "id": 3,
-    "user": "User3",
-    "username": "@user3",
-    "content": "Content 3 loremipsum awlrhopqhjr[ohr[H [OT3H",
+    "user": "Rahul Singh",
+    "username": "@rahul_singh",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKZ2b-kuzeuY-YXGlsCmhsoRAEL0L9297TJqE39tLex=s96-c",
+    "content": "Invesnow.in is my fav 😎",
     "timestamp": "10:00 AM . 4 DEC 2023"
   },
   {
     "id": 4,
-    "user": "User4",
-    "username": "@user4",
-    "content": "Content 4",
+    "user": "Meera Sharma",
+    "username": "@meera_94",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJbcTFrCu61wv_wsWy1jxDjcO_D2-1Rf7s-qepR64t_SDM=s96-c",
+    "content": "Invesnow.in has made investing so simple and hassle-free. Kudos to the team! 🙌💡",
     "timestamp": "11:00 AM . 4 DEC 2023"
   },
   {
     "id": 5,
-    "user": "User5",
-    "username": "@user5",
-    "content": "Content 5",
+    "user": "Amit Gupta",
+    "username": "@amitg_789",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJRUJ5L0pmfhNeYyNViAXVD1T-UXSOkhsma-SSgXDLT=s96-c",
+    "content": "Invesnow.in provides excellent investment opportunities with great returns. Loving the experience! 💼💰",
     "timestamp": "12:00 PM . 4 DEC 2023"
   },
   {
     "id": 6,
-    "user": "User6",
-    "username": "@user6",
-    "content": "Content 6",
+    "user": "Pooja Verma",
+    "username": "@pooja_verma",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKUWBImbi5aMsS3F_s_7Eq0wx1FhswXn3js2zxuL3yu=s96-c",
+    "content": "Just started using invesnow.in and I'm already impressed with the variety of investment options available. 🌟💼",
     "timestamp": "1:00 PM . 4 DEC 2023"
   },
   {
     "id": 7,
-    "user": "User7",
-    "username": "@user7",
-    "content": "Content 7",
+    "user": "Rajesh Tiwari",
+    "username": "@rajesh_87",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKla5xO4ngb158n_7MbkSqAJMiqj0w0eSkYb4gff62zTyc=s96-c",
+    "content": "just automated my trading using invesnow.in : ) lesgo 💹💼",
     "timestamp": "2:00 PM . 4 DEC 2023"
   },
   {
     "id": 8,
-    "user": "User8",
-    "username": "@user8",
-    "content": "Content 8",
+    "user": "Neha Reddy",
+    "username": "@neha_22",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIqxDKkHj0kHqVhg7tWRtdTBSJH3D3qtp1xy-4cPgfQ=s96-c",
+    "content": "woah invesnow.in is a game changer 🎉💼",
     "timestamp": "3:00 PM . 4 DEC 2023"
   },
   {
     "id": 9,
-    "user": "User9",
-    "username": "@user9",
-    "content": "Content 9",
+    "user": "Arun Kumar",
+    "username": "@arun_kumar",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIOOms0jhDVWXMJImfP4ZrXt4Gv-xNxPoP7orNgChkGjA=s96-c",
+    "content": "Invesnow.in has simplified my investment journey. Highly recommend it to everyone! 💡💼",
     "timestamp": "4:00 PM . 4 DEC 2023"
   },
   {
     "id": 10,
-    "user": "User10",
-    "username": "@user10",
-    "content": "Content 10",
+    "user": "Neha Sharma",
+    "username": "@neha_sharma",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJOgkRvYrQREW8Cj_1yNOd4fjWZW4QY19pQWDfXTyHBkOY=s96-c",
+    "content": "Just discovered invesnow.in and I'm already impressed by the intuitive interface and investment options. Excited to explore more! 🌟💼",
     "timestamp": "5:00 PM . 4 DEC 2023"
   },
   {
     "id": 11,
-    "user": "User11",
-    "username": "@user11",
-    "content": "Content 11",
+    "user": "Kunal Patel",
+    "username": "@kunal_patel_007",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIayKDUWFiPdZpa-1VlGRA0oyyVyb1JBUhwxSNUDIFA=s96-c",
+    "content": "Invesnow.in is a fantastic platform for both beginners and seasoned investors. The ease of use is unparalleled! 🌟💼",
     "timestamp": "6:00 PM . 4 DEC 2023"
   },
   {
     "id": 12,
-    "user": "User12",
-    "username": "@user12",
-    "content": "Content 12",
+    "user": "Ananya Mishra",
+    "username": "@ananya_22",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIUDjSveZ-gtEGSSqYyTcbOQffp4ttuUFsAoLNh0X1paQ=s96-c",
+    "content": "Started my investment journey with invesnow.in, and I'm already feeling more financially empowered. Highly recommended! 💰💡",
     "timestamp": "7:00 PM . 4 DEC 2023"
   },
   {
     "id": 13,
-    "user": "User13",
-    "username": "@user13",
-    "content": "Content 13",
+    "user": "Vikram Singh",
+    "username": "@vikram_1985",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKurEVRFG6BkLxK31X1bf_IFAbr8NEFIRROUPFCzFnxnw=s96-c",
+    "content": "Impressed with the variety of investment options available on invesnow.in. It's truly a one-stop destination for investors! 💼🌟",
     "timestamp": "8:00 PM . 4 DEC 2023"
   },
   {
     "id": 14,
-    "user": "User14",
-    "username": "@user14",
-    "content": "Content 14",
+    "user": "Shreya Gupta",
+    "username": "@shreya_89",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJWUQ1Z9GKzq9hvjn0G0ppHQTXpWgkGUA0lxBdLpEKDKziO=s96-c",
+    "content": "I've been using invesnow.in for a few weeks now, and it's been a seamless experience so far. Great platform for investment! 🚀💼",
     "timestamp": "9:00 PM . 4 DEC 2023"
   },
   {
     "id": 15,
-    "user": "User15",
-    "username": "@user15",
-    "content": "Content 15",
-    "timestamp": "10:00 PM . 4 DEC 2023"
+    "user": "Rajesh Kumar",
+    "username": "@rajesh_1980",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIgakGFEKS0JwZsdJ0aS4h61B1x7buO6_sgxdNAaLo=s96-c",
+    "content": "Just joined invesnow.in and I'm already impressed by the variety of investment opportunities available. Looking forward to growing my portfolio! 🌟💼",
+    "timestamp": "10:00 AM . 5 DEC 2023"
   },
   {
     "id": 16,
-    "user": "User16",
-    "username": "@user16",
-    "content": "Content 16",
-    "timestamp": "11:00 PM . 4 DEC 2023"
+    "user": "Priya Sharma",
+    "username": "@priya_22",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKfa1iE9xVuDEzoxswL4bojeIM7W4tEVtkOefc0TxN5=s96-c",
+    "content": "The user interface of invesnow.in is so user-friendly! It makes managing investments a breeze. Highly recommended! 💼🌟",
+    "timestamp": "11:00 AM . 5 DEC 2023"
   },
   {
     "id": 17,
-    "user": "User17",
-    "username": "@user17",
-    "content": "Content 17",
-    "timestamp": "12:00 AM . 5 DEC 2023"
+    "user": "Amit Gupta",
+    "username": "@amit_1987",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocI36a-B5MzWSLYQY5m3wwR8CEzIJFNp-c975ERpz8ns=s96-c",
+    "content": "Just started exploring invesnow.in, and I'm already impressed by the educational resources available for investors. Great initiative! 📚💡",
+    "timestamp": "12:00 PM . 5 DEC 2023"
   },
   {
     "id": 18,
-    "user": "User18",
-    "username": "@user18",
-    "content": "Content 18",
-    "timestamp": "1:00 AM . 5 DEC 2023"
+    "user": "Sneha Singh",
+    "username": "@sneha_singh",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJB-Q-szMH7IG3g2UiIDTM85Zh7ms2qSmty2wQIV3QTpKY=s96-c",
+    "content": "The investment tips and recommendations on invesnow.in are really insightful! Kudos to the team for providing such valuable information. 💡💼",
+    "timestamp": "1:00 PM . 5 DEC 2023"
   },
   {
     "id": 19,
-    "user": "User19",
-    "username": "@user19",
-    "content": "Content 19",
-    "timestamp": "2:00 AM . 5 DEC 2023"
+    "user": "Rahul Verma",
+    "username": "@rahul_v",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIoVH_EWydhu7hc72dEklVixYYceq4Os5BZ1Rewikhw=s96-c",
+    "content": "I've been using invesnow.in for a while now, and I must say, it has simplified my investment journey. Thank you for such a great platform! 💼🚀",
+    "timestamp": "2:00 PM . 5 DEC 2023"
   },
   {
     "id": 20,
-    "user": "User20",
-    "username": "@user20",
-    "content": "Content 20",
-    "timestamp": "3:00 AM . 5 DEC 2023"
+    "user": "Neha Patel",
+    "username": "@neha_85",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKT_RWAwHLm0paQPlQ_mxRHHp-M-edFiXDgfW-iWtG-_8A=s96-c",
+    "content": "Just stumbled upon invesnow.in, and I'm amazed by the range of investment options available! Can't wait to explore more. 💼🌟",
+    "timestamp": "3:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 21,
+    "user": "Ankit Jain",
+    "username": "@ankit_1990",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIh-z_OmmVz5imjq4agNBqNJxa_vfe0r0tm2G5IdMpf8YE=s96-c",
+    "content": "Kudos to the team behind invesnow.in for creating such a seamless platform for investors! Loving the experience so far. 💼🌟",
+    "timestamp": "4:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 22,
+    "user": "Aarav Desai",
+    "username": "@aarav_desai",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLCb6SvQ7_fHeO-qNkgvdAFAUXKppoKjJyDZCQ3H3lr=s96-c",
+    "content": "Started using invesnow.in recently, and I'm already feeling more confident about my investment decisions. Great platform! 💼🚀",
+    "timestamp": "5:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 23,
+    "user": "Pooja Mehta",
+    "username": "@pooja_mehta",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIq5MQMq9FfK6CTJge4D6ZZJtFFDcdOeF8o4DNyVb8zoRA=s96-c",
+    "content": "The educational articles on invesnow.in are a goldmine of information for newbie investors like me! Thank you for the insights. 📚💡",
+    "timestamp": "6:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 24,
+    "user": "Vivek Reddy",
+    "username": "@vivek_79",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocL4swWPJGGnsbgWTJJPOJmHxjwrzkqaUUX3xtrATjpH9Q=s96-c",
+    "content": "Just registered on invesnow.in, and I'm already impressed by the user interface and the wealth of investment knowledge available. Excited to get started! 💼🌟",
+    "timestamp": "7:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 25,
+    "user": "Neel Singh",
+    "username": "@rakesh_2023",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJPHHeggYRqhSp2kzYlny4H6KZ-dDfjsJEid3bme8KAoMau=s96-c",
+    "content": "Just discovered invesnow.in, and I'm already hooked! The platform seems like a treasure trove of investment opportunities. Can't wait to explore further. 💰🌟",
+    "timestamp": "8:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 26,
+    "user": "Karan Shah",
+    "username": "@karan_88",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocI4zuLSiEUxuM0t3_SFCMPypnzHe64kmS396nE6jUiLhg=s96-c",
+    "content": "Shoutout to invesnow.in for simplifying the investment process! As someone new to investing, I appreciate the user-friendly interface and educational resources. 💼📚",
+    "timestamp": "9:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 27,
+    "user": "Sneha Gupta",
+    "username": "@sneha_gupta",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKpZVVU3Oqg7Jc7m46mI_s0uAV_H_oVQO1IVn_z4Y_V0qdx=s96-c",
+    "content": "I've been using invesnow.in for a week now, and I'm impressed by the diversity of investment options available. It's truly a one-stop destination for investors. 💼🌟",
+    "timestamp": "10:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 28,
+    "user": "Arjun Mehta",
+    "username": "@arjun_m",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJe7r9ucD5kR_29k7v7Oe7szbLWQIkA6VYhDnODLA6lLbMn=s96-c",
+    "content": "Kudos to the team at invesnow.in for making investment education accessible to everyone! The platform has been instrumental in enhancing my financial literacy. 💼📚",
+    "timestamp": "11:00 PM . 5 DEC 2023"
+  },
+  {
+    "id": 29,
+    "user": "Riya Sharma",
+    "username": "@riya_2024",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocL0F8ihLNWxR1JAs3C8y-PzhUOAO31dA5GVzcLvAXuu=s96-c",
+    "content": "Just discovered invesnow.in, and I'm already impressed by the variety of investment options available. Looking forward to exploring more! 💰🌟",
+    "timestamp": "10:00 AM . 6 DEC 2023"
+  },
+  {
+    "id": 30,
+    "user": "Karan Singh",
+    "username": "@karan_1988",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLiPz_OqUwlro2jHJPBqM_F0irIoUQ40zur8oEd3LkzPvM=s96-c",
+    "content": "Invesnow.in seems like the perfect platform for both beginners and experienced investors alike. Excited to dive deeper into its features! 💼🚀",
+    "timestamp": "11:00 AM . 6 DEC 2023"
+  },
+  {
+    "id": 31,
+    "user": "Aakash Gupta",
+    "username": "@aakash_gupta",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIY-V2WtF4A0AP-gJ6LC1ObKHUUMRy_RTYgPrVsDF_OflI=s96-c",
+    "content": "Just started exploring invesnow.in, and I'm already finding valuable resources to enhance my investment knowledge. Highly recommended! 📚💡",
+    "timestamp": "12:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 32,
+    "user": "Sneha Verma",
+    "username": "@sneha_verma",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocK8QXU8LeqC-8P8aTNrXP-TgpvKplYDP7WZAaYqfp5p_l8=s96-c",
+    "content": "The simplicity and clarity of invesnow.in make it a standout platform for investors. Loving the experience so far! 💼🌟",
+    "timestamp": "1:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 33,
+    "user": "Rahul Malhotra",
+    "username": "@rahul_1995",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIdQE9piUOTRfJC9WtXbEV4Aa1Nei1TKFMLTkf7LlW4=s96-c",
+    "content": "Impressed by the educational content and investment tools offered by invesnow.in. Definitely a game-changer for investors! 📚💼",
+    "timestamp": "2:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 34,
+    "user": "Shreya Patel",
+    "username": "@shreyesh_2000",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocJ576YSkqDHObFzUJF-pb8e5xm-VAq7O3yki7EtQ_BBS7U=s96-c",
+    "content": "Just joined invesnow.in and I'm already impressed by the variety of investment options available. Excited to explore more! 💼🌟",
+    "timestamp": "3:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 35,
+    "user": "Nikhil Kumar",
+    "username": "@nikhil_123",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKH9oGfylTWM1oNsxoEmI6JC3JBD9WzWj_VQzFBZ5a1nQ=s96-c",
+    "content": "Invesnow.in is a great platform for anyone looking to start their investment journey. The interface is user-friendly, and the investment options are diverse. 🌟💼",
+    "timestamp": "4:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 36,
+    "user": "Vivek Kumar",
+    "username": "@vivek_1989",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLRKf6AnFhw4GfSx4hf7lOs1PGbB7eEZ4ggS5FrfDoEgA=s96-c",
+    "content": "Just started exploring invesnow.in, and I'm already impressed by the educational resources and investment tools available. Great platform for investors! 💼📚",
+    "timestamp": "5:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 37,
+    "user": "Ananya Singh",
+    "username": "@ananya_77",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIO8Rx8V5yGNKJw1hXk4bdTJ8I6JnpbN8i98dZvO5Y-8Q=s96-c",
+    "content": "The investment recommendations on invesnow.in are spot on! It's helped me make informed decisions about my portfolio. Highly recommended! 💼📈",
+    "timestamp": "6:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 38,
+    "user": "Ankit Sharma",
+    "username": "@ankit_95",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIxLlLrG8qY-jVAn01ZzrfrTxNG3wGwfla6bRuyQ7U=s96-c",
+    "content": "Just registered on invesnow.in, and I'm already impressed by the range of investment options available. Excited to explore further and grow my portfolio! 💼🚀",
+    "timestamp": "7:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 39,
+    "user": "Rahul Sharma",
+    "username": "@rahul_88",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocIz7D5n-Wo0zHM2rNpFxcC2htkT0eAgyXNrdc8UHxnEXg=s96-c",
+    "content": "Just started using invesnow.in, and I'm already impressed by the user-friendly interface and the wealth of investment options available. Excited to explore more! 💼🌟",
+    "timestamp": "8:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 40,
+    "user": "Riya Singh",
+    "username": "@riya_11",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocKTLJ-mLRVXJkPfSMjVB5Ac6we9N05-79KmdzWyI8M=s96-c",
+    "content": "Just discovered invesnow.in, and I'm already impressed by the simplicity and ease of use. Excited to explore the investment opportunities! 💼🚀",
+    "timestamp": "9:00 PM . 6 DEC 2023"
+  },
+  {
+    "id": 41,
+    "user": "Aryan Patel",
+    "username": "@aryan_78",
+    "image": "https://lh3.googleusercontent.com/a/ACg8ocLYHCM1hvG-svHed_vZ9a9PmXtak-_RC9wJ6tdKZPc=s96-c",
+    "content": "Invesnow.in is my go-to platform for all things related to investments. The interface is intuitive, and the investment options are diverse. Highly recommend! 💼🌟",
+    "timestamp": "10:00 PM . 6 DEC 2023"
   }
 ]

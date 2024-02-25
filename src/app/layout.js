@@ -1,6 +1,8 @@
 import { Inter } from 'next/font/google'
-
+// import 'mdb-react-ui-kit/dist/css/mdb.min.css'
+// import "@fortawesome/fontawesome-free/css/all.min.css"
 import './globals.css'
+import Bot from "./component/bot/bot.js";
 // import '@mantine/core/styles.css';
 // import { MantineProvider } from '@mantine/core';
 
@@ -16,8 +18,11 @@ export default function RootLayout({ children }) {
     <html className="overflow-x-hidden" lang="en">
 
 
-   <body className={inter.className}>{children}</body>
-
+   <body className={inter.className}>{children}
+   
+   <Bot />
+   </body>
+   {/* <Bot /> */}
    </html>
   )
 }

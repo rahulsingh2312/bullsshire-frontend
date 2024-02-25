@@ -3,6 +3,7 @@
 // import img from 'next/img'
 import {playfairDisplaySC , redRose } from '../font'
 import Link from 'next/link';
+import Bottomnav from '../bottomnav/bottomnav'
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -52,7 +53,7 @@ function Dashboard() {
         setUser(authUser);
         // Store user data in Firestore
 
-        // router.push("/login");
+//         router.push("/dashboard/profile");
       } else {
         setUser(null);
       }
@@ -176,12 +177,12 @@ function Dashboard() {
 
 
 
-<div className="flex  justify-center ml-3 items-center h-screen bg-black">
+<div className="flex md:w-96  justify-center ml-3 items-center h-screen bg-black">
       <div className="w-full  h-auto bg-black p-8  shadow-lg">
-        <h1 className="text-2xl font-bold text-center text-gray-200 mb-8">Login to your Inves now Account</h1>
+        <h1 className="text-2xl md:ml-8 font-bold text-center text-gray-200 mb-8">Login to your Inves now Account</h1>
         <div
           onClick={handleGoogleLogin}
-            className="w-full bg-white mt-4 text-center text-black font-medium px-4 py-3 border-gray-900 border-2  items-center flex hover:bg-black hover:text-white cursor-pointer transition-all"
+            className="w-full md:w-96 bg-white mt-4 text-center text-black font-medium px-4 py-3 border-gray-900 border-2  items-center flex hover:bg-black hover:text-white cursor-pointer transition-all"
           >
             <img
               src="/google.svg"
@@ -194,33 +195,33 @@ function Dashboard() {
           </div>
          <Link href='/dashboard/phone'><div
           
-          className="w-full bg-white mt-4 text-center text-black font-medium px-4 py-3 border-gray-900 border-2  items-center flex hover:bg-black hover:text-white cursor-pointer transition-all"
+          className="w-full md:w-96 bg-white mt-4 text-center text-black font-medium px-4 py-3 border-gray-900 border-2  items-center flex hover:bg-black hover:text-white cursor-pointer transition-all"
         >
           <img
             src="/phone.svg"
             alt="phone img duh"
-            className="mr-12 max-sm:mr-4 "
+            className="mr-12  max-sm:mr-4 "
             height={20}
             width={20}
           />
           Continue with Phone
         </div></Link>
-          <div className='flex justify-center items-center my-5'>
+          <div className='flex md:ml-5 justify-center items-center my-5'>
  
      ------ OR ------
           </div>
         <input
           type="text"
           placeholder="Email"
-          className="w-full text-black h-12 px-4 border border-gray-400  mb-4"
+          className="w-full md:w-96 text-black h-12 px-4 border border-gray-400  mb-4"
         />
         <input
           type="password"
           placeholder="Password"
-          className="w-full text-black h-12 px-4 border border-gray-400  mb-4"
+          className="w-full md:w-96 text-black h-12 px-4 border border-gray-400  mb-4"
         />
         <div className="flex items-center justify-between mb-4">
-          <label htmlFor="remember-me" className="text-gray-400 text-sm">
+          <label htmlFor="remember-me" className="text-gray-400  text-sm">
             <input type="checkbox" id="remember-me" className="mr-2" />
             Remember Me
           </label>
@@ -228,7 +229,7 @@ function Dashboard() {
             Forgot Password?
           </a>
         </div>
-        <button className="w-full h-12 bg-red-500 text-white font-semibold ">
+        <button className="w-full md:w-96 h-12 bg-red-500 text-white font-semibold ">
           Login
         </button>
       
@@ -256,7 +257,9 @@ function Dashboard() {
 
 
 
-
+    <div className='md:hidden'>
+<Bottomnav active={'profile'} /></div>
+ 
 
 
 
