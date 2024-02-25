@@ -17,7 +17,7 @@ export default function Xtraord() {
     <div className={`${inknutAntiqua.className} flex justify-center  `}>
   <Link className=' z-50 ' href="/explore" >     <div className="md:w-40 rounded  z-50  w-24 h-12 text-black flex justify-center items-center ml-6  bg-gray-100" > Explore </div></Link>
      <img width={"50"} src='/svgdesign.svg' alt="design u not missin on anythin" />
-        <Link className=' z-50 ' href="/login" >       <div className="md:w-40  z-50  rounded w-24 h-12  bg-black flex justify-center items-center border-white border-solid border-2" >  Login</div></Link>
+        <Link className=' z-50 ' href="/dashboard" >       <div className="md:w-40  z-50  rounded w-24 h-12  bg-black flex justify-center items-center border-white border-solid border-2" >  Login</div></Link>
         {/* </div> */}
 </div>
 {/* <div className='flex justify-center'> */}

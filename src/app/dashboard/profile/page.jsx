@@ -1,84 +1,205 @@
 'use client'
 import React from 'react';
+import Footer from '../../hero/footer';
 // import { MDBClientOnly, MDBModal } from 'mdb-react-ui-kit';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import "@fortawesome/fontawesome-free/css/all.min.css"
+import Link from 'next/link'
+import Bottomnav from '../../bottomnav/bottomnav.jsx'
+import {playfairDisplaySC , redRose} from "../../font"
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
 
 export default function EditButton() {
   return (
-    <div className="gradient-custom-2" style={{ backgroundColor: '#9de2ff' }}>
-      <MDBContainer className="py-5 h-100">
-        <MDBRow className="justify-content-center align-items-center h-100">
-          <MDBCol lg="9" xl="7">
-            <MDBCard>
-              <div className="rounded-top text-white d-flex flex-row" style={{ backgroundColor: '#000', height: '200px' }}>
-                <div className="ms-4 mt-5 d-flex flex-column" style={{ width: '150px' }}>
-                  <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
-                    alt="Generic placeholder image" className="mt-4 mb-2 img-thumbnail" fluid style={{ width: '150px', zIndex: '1' }} />
-                  <MDBBtn outline color="dark" style={{height: '36px', overflow: 'visible'}}>
-                    Edit profile
-                  </MDBBtn>
-                </div>
-                <div className="ms-3" style={{ marginTop: '130px' }}>
-                  <MDBTypography tag="h5">Andy Horwitz</MDBTypography>
-                  <MDBCardText>New York</MDBCardText>
+
+
+
+
+
+<div className="bg-black">
+<nav>
+<div>
+
+        <div className='  flex' >
+            <div className="md:ml-20 w-20 md:w-40 ml-10 mt-10" > <img  src='/logo.png' alt="logoig" />  </div>
+            <div className={`${playfairDisplaySC.className} md:text-4xl md:mt-20 md:mx-auto mt-16 md:block `}  >
+           Bullsshire Traders
+            </div>
+<Link href="/explore" className={` hidden ${playfairDisplaySC.className} mt-20 mx-10 rounded-lg  w-12 h-10 justify-center md:flex items-center text-xl`}>
+Home
+</Link>
+<Link href="/ideas" className={` hidden ${playfairDisplaySC.className} mt-20 mx-10 rounded-lg w-12 h-10 justify-center md:flex items-center text-xl`}>
+Ideas
+</Link>
+<Link href="/strategies" className={` hidden ${playfairDisplaySC.className} mt-20 mx-20 rounded-lg w-12 h-10 justify-center md:flex items-center text-xl`}>
+Strategies
+</Link>
+        </div>
+</div>
+
+</nav>
+
+
+
+
+<div className='flex md:justify-center md:items-center'>
+    <div className="flex md:justify-center md:items-center flex-col pt-4 max-w-[960px]">
+      <div className="flex flex-col px-4 w-full max-md:max-w-full">
+        <div className="flex gap-5 justify-between w-full max-md:flex-wrap max-md:max-w-full">
+          <div>
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+              <div className="flex w-20 h-20 items-center mt-8 justify-center max-md:ml-0 max-md:w-full">
+                <img
+                  loading="lazy"
+                  src='/char.png'
+                  className="w-32 rounded-full  max-w-full aspect-square max-md:mt-4"
+                />
+              </div>
+              <div className="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow justify-center py-10 whitespace-nowrap  max-md:mt-4">
+                  <div className="text-2xl font-bold tracking-tight text-white">
+                    Rahul singh
+                  </div>
+                  <div className="text-base leading-6 text-slate-400">
+                    Automate your stock market trading
+                  </div>
                 </div>
               </div>
-              <div className="p-4 text-black" style={{ backgroundColor: '#f8f9fa' }}>
-                <div className="d-flex justify-content-end text-center py-1">
-                  <div>
-                    <MDBCardText className="mb-1 h5">253</MDBCardText>
-                    <MDBCardText className="small text-muted mb-0">Photos</MDBCardText>
-                  </div>
-                  <div className="px-3">
-                    <MDBCardText className="mb-1 h5">1026</MDBCardText>
-                    <MDBCardText className="small text-muted mb-0">Followers</MDBCardText>
-                  </div>
-                  <div>
-                    <MDBCardText className="mb-1 h5">478</MDBCardText>
-                    <MDBCardText className="small text-muted mb-0">Following</MDBCardText>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center px-4 py-2.5 my-auto text-sm font-bold tracking-wide leading-5 text-white whitespace-nowrap rounded-xl bg-slate-800">
+            <div className="justify-center bg-slate-800">Connect wallet</div>
+          </div>
+        </div>
+        <div className="mt-9 text-2xl font-bold tracking-tight text-white max-md:max-w-full">
+          Connected Wallets
+        </div>
+      </div>
+      <div className="flex flex-col justify-center px-4 py-3 mt-3 w-full bg-gray-900 max-md:max-w-full">
+        <div className="flex gap-4 justify-between max-md:flex-wrap max-md:max-w-full">
+          <div className="flex justify-center items-center self-start px-3 w-12 h-12 rounded-lg aspect-square bg-slate-800">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/08edd267ba78f72d7e7f54272b464f7d57b59d6924b6fba74dae681fc52b58df?"
+              className="w-full aspect-square"
+            />
+          </div>
+          <div className="flex flex-col flex-1 justify-center text-sm leading-5 text-slate-400 max-md:max-w-full">
+            <div className="text-base font-medium text-white max-md:max-w-full">
+             zerodha
+            </div>
+            <div className="max-md:max-w-full">• Connected</div>
+            <div className="max-md:max-w-full">
+              balance :
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="self-start mt-5 ml-4 text-2xl font-bold tracking-tight text-white whitespace-nowrap max-md:ml-2.5">
+        Trading Strategy
+      </div>
+      <div className="flex flex-col justify-center px-4 py-3 mt-3 w-full bg-gray-900 max-md:max-w-full">
+        <div className="flex gap-4 justify-between max-md:flex-wrap max-md:max-w-full">
+          <div className="flex justify-center items-center px-3 w-12 h-12 rounded-lg aspect-square bg-slate-800">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac92786b24fb12f9e19c0d00060e2fcb86f2ad3beeb36231b7a2ec26e77645e3?"
+              className="w-full aspect-square"
+            />
+          </div>
+          <div className="flex flex-col flex-1 justify-center self-start leading-[150%] max-md:max-w-full">
+            <div className="text-base font-medium text-white max-md:max-w-full">
+              Long only
+            </div>
+            <div className="text-sm text-slate-400 max-md:max-w-full">
+              Buy and hold a diversified portfolio of stocks
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col justify-center px-4 py-3 w-full bg-gray-900 max-md:max-w-full">
+        <div className="flex gap-4 justify-between max-md:flex-wrap max-md:max-w-full">
+          <div className="flex justify-center items-center px-3 w-12 h-12 rounded-lg aspect-square bg-slate-800">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3ef2715b91f883ffa0daa03d0d1aae8c5891d995785036f403e74902dcc1ae6?"
+              className="w-full aspect-square"
+            />
+          </div>
+          <div className="flex flex-col flex-1 justify-center self-start leading-[150%] max-md:max-w-full">
+            <div className="text-base font-medium text-white max-md:max-w-full">
+              Long only
+            </div>
+            <div className="text-sm text-slate-400 max-md:max-w-full">
+              Buy and hold a diversified portfolio of stocks
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="self-start mt-5 ml-4 text-2xl font-bold tracking-tight text-white max-md:ml-2.5">
+        Performance
+      </div>
+      <div className="justify-center px-4 py-6 mt-3 w-full max-md:max-w-full">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+          <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col grow px-6 pt-6 pb-11 w-full rounded-xl border border-solid border-slate-600 leading-[150%] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              <div className="text-base font-medium text-white">
+                Portfolio Value
               </div>
-              <MDBCardBody className="text-black p-4">
-                <div className="mb-5">
-                  <p className="lead fw-normal mb-1">About</p>
-                  <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText className="font-italic mb-1">Web Developer</MDBCardText>
-                    <MDBCardText className="font-italic mb-1">Lives in New York</MDBCardText>
-                    <MDBCardText className="font-italic mb-0">Photographer</MDBCardText>
-                  </div>
-                </div>
-                <div className="d-flex justify-content-between align-items-center mb-4">
-                  <MDBCardText className="lead fw-normal mb-0">Recent photos</MDBCardText>
-                  <MDBCardText className="mb-0"><a href="#!" className="text-muted">Show all</a></MDBCardText>
-                </div>
-                <MDBRow>
-                  <MDBCol className="mb-2">
-                    <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(112).webp"
-                      alt="image 1" className="w-100 rounded-3" />
-                  </MDBCol>
-                  <MDBCol className="mb-2">
-                    <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(107).webp"
-                      alt="image 1" className="w-100 rounded-3" />
-                  </MDBCol>
-                </MDBRow>
-                <MDBRow className="g-2">
-                  <MDBCol className="mb-2">
-                    <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(108).webp"
-                      alt="image 1" className="w-100 rounded-3" />
-                  </MDBCol>
-                  <MDBCol className="mb-2">
-                    <MDBCardImage src="https://mdbcdn.b-cdn.net/img/Photos/Lightbox/Original/img%20(114).webp"
-                      alt="image 1" className="w-100 rounded-3" />
-                  </MDBCol>
-                </MDBRow>
-              </MDBCardBody>
-            </MDBCard>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/25c13b757ddabee9efc5fcb5662f3b6022a874f804da778d649437b57a20961d?"
+                className="mt-12 w-full aspect-[2.78] max-md:mt-10"
+              />
+              <div className="flex gap-5 justify-between mt-6 text-sm font-bold tracking-normal text-slate-400">
+                <div>Jan 1</div>
+                <div>Jan 15</div>
+                <div>Jan 30</div>
+                <div>Feb 15</div>
+
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col grow px-6 pt-6 pb-11 w-full rounded-xl border border-solid border-slate-600 leading-[150%] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              <div className="text-base font-medium text-white">Daily P&L</div>
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/002c9a4bc6d03a0d2874f93496f3d6be069502fed4135949d2f5fd388fbf373f?"
+                className="mt-12 w-full aspect-[2.78] max-md:mt-10"
+              />
+              <div className="flex gap-5 justify-between mt-6 text-sm font-bold tracking-normal text-slate-400">
+                <div>Jan 1</div>
+                <div>Jan 15</div>
+                <div>Jan 30</div>
+                <div>Feb 15</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+
+    <div className="md:flex ">
+  <div className="">
+    </div>
+
+
+
+
+    </div>
+    <div className='md:hidden'>
+
+<Bottomnav active={'profile'} />
+</div>
+    <div className='hidden md:block'>
+  <Footer />
+</div>
     </div>
   );
 }

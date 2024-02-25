@@ -12,7 +12,7 @@ export default function Buttonforhero() {
     <div>
         <div className={`${inknutAntiqua.className} flex mt-6 md:mt-16 md:-ml-96 md:justify-center text-xl`}>
      <Link href="/explore" >   <div className="md:w-40 rounded w-32 h-12 text-black flex justify-center items-center ml-6  bg-gray-100" > Explore </div> </Link>
-     <Link href="/login" >   <div className="md:w-40 rounded w-32 h-12 ml-2 bg-black flex justify-center items-center border-white border-solid border-2" >  Login</div> </Link>
+     <Link href="/dashboard" >   <div className="md:w-40 rounded w-32 h-12 ml-2 bg-black flex justify-center items-center border-white border-solid border-2" >  Login</div> </Link>
         </div>
         <div className="ml-5 md:-ml-2 md:flex md:mt-4 md:justify-center"><div className='md:-ml-48 md:mr-7' style={{ height: '100%', color: 'rgba(231.82, 231.63, 231.63, 0.64)', fontSize: 15, fontFamily: 'Lato', fontWeight: '600', lineHeight: 3, letterSpacing: 0.30, wordWrap: 'break-word'}}>supported on India’s largest brokers</div>
 <div className='flex'>

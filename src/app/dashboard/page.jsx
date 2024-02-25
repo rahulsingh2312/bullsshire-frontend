@@ -53,7 +53,7 @@ function Dashboard() {
         setUser(authUser);
         // Store user data in Firestore
 
-//         router.push("/dashboard/profile");
+        router.push("/dashboard/profile");
       } else {
         setUser(null);
       }
