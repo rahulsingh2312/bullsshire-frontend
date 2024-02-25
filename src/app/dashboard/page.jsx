@@ -68,7 +68,7 @@ function Dashboard() {
     signInWithPopup(auth, provider)
       .then((result) => {
         // User signed in
-        console.log(result.user);
+        // console.log(result.user);
         const user = result.user;
         setUser(user);
         saveUserDataToFirestore(user);
@@ -92,6 +92,7 @@ function Dashboard() {
           displayName: user.displayName,
           email: user.email,
           photoURL: user.photoURL,
+          phoneNumber : user.phoneNumber
           // You can add more user data as needed
         });
         console.log("User data successfully stored in Firestore!");

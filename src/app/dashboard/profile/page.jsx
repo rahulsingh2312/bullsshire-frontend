@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Footer from '../../hero/footer';
+import { IoIosLogOut } from "react-icons/io"
 // import { MDBClientOnly, MDBModal } from 'mdb-react-ui-kit';
 import { useState , useEffect } from 'react';
 import { initializeApp } from "firebase/app";
@@ -75,13 +76,13 @@ export default function EditButton() {
 
         <div className='  flex' >
             <div className="md:ml-20 w-20 md:w-40 ml-10 mt-10" > <img  src='/logo.png' alt="logoig" />  </div>
-            <div className={`${playfairDisplaySC.className} md:text-4xl md:mt-20 md:mx-auto mt-16 md:block `}  >
+            <div className={`${playfairDisplaySC.className} md:text-4xl text-1xl md:mt-20 md:mx-auto mt-16 md:block `}  >
            Bullsshire Traders {user ? (
             <button onClick={handleLogout}>
-              <img src="/exit.png" height={30} width={30} alt="" />
+              <IoIosLogOut />
             </button>
           ) : (
-            ""
+            "duh login first"
           )}
             </div>
             
