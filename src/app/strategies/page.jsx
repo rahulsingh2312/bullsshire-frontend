@@ -1,6 +1,7 @@
 'use client'
 // import img from 'next/img'
 // import Logo from '../ideas/imgs/biglogo.png'
+import Link from 'next/link'
 import {playfairDisplaySC , redRose } from '../font'
 import Footer from '../hero/footer';
 // import Designright from '../hero/imgs/b4footer.png'
