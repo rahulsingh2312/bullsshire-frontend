@@ -218,7 +218,7 @@ function Dashboard() {
 
 
 <div className="flex md:w-96  justify-center ml-3 items-center h-screen bg-[#231F2B]">
-      <div className="w-full md:ml-96  h-auto bg-[#231F2B] p-8  shadow-lg">
+      <div className="w-full z-100 md:ml-96  h-auto bg-[#231F2B] p-8  shadow-lg">
         <h1 className="text-2xl md:ml-8 font-bold text-center text-gray-200 mb-8">Login to your Inves now Account</h1>
         <div
           onClick={handleGoogleLogin}
