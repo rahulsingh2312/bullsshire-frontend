@@ -133,9 +133,9 @@ Strategies
               <div className="flex w-20 h-20 items-center mt-8 justify-center max-md:ml-0 max-md:w-full">
                 
 
-{user.photoURL ? (
+{user ? (
               <img
-                src={`${user.photoURL}`}
+                src={`${user.photoURL || "/char.png"} `}
                 alt=""
                 className="w-32 rounded-full  max-w-full aspect-square max-md:mt-4"
               />
