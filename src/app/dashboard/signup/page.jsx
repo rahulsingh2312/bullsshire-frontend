@@ -40,7 +40,7 @@ const db = getFirestore(app);
 function Dashboard() {
   const [user, setUser] = useState(null);
   const router = useRouter();
-
+  const[errorb, setErrorb] = useState(null);
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('');
 
@@ -60,8 +60,8 @@ function Dashboard() {
       })
       .catch((error) => {
           const errorCode = error.code;
-          const errorMessage = error.message;
-          console.log(errorCode, errorMessage);
+         setErrorb(error.message);
+          console.log(errorCode, error.message);
           // ..
       });
     }
@@ -300,6 +300,7 @@ function Dashboard() {
             Login
           </a>
         </div>
+        {errorb && <h2 className='text-pink-800'>{errorb}</h2>}
       </div>
     </div>
     </div>
