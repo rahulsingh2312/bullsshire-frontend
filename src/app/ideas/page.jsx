@@ -71,16 +71,16 @@ export default function Pages() {
             </div>
 
             {/* Buttons Section */}
-            <div className=' mt-10 ml-5 md:ml-96 z-50 flex justify-center' style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <div className='flex justify-center gap-2 md:gap-5' style={{ width: '100%', height: '100%', position: 'relative' }}>
                 {buttonsData.map((button) => (
                     <div
                         key={button.id}
                         onHover={() => handleButtonClick(button.id)}
                         onClick={() => handleButtonClick(button.id)}
                         style={{
-                            width: 126,
+                            width: 85,
                             height: 36,
-                            position: 'absolute',
+                            position: '',
                             background: button.background,
                             boxShadow: '46px 46px 40px rgba(0, 0, 0, 0.25)',
                             borderRadius: 7,

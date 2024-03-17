@@ -48,8 +48,8 @@ Login
 
 
 <div className="flex w-1/2 mt-20 md:w-full md:justify-center  ">
-<img src='/storyidea.png' className="mt-20 md:mt-60  w-[40%]" alt="stryide" />
-<img src='/storystrat.png' className="mb-20 md:mb-60 w-[40%] " alt="strystrt" />
+<img src='/storyidea.png' className="mt-20 md:mt-60  md:w-[40%]" alt="stryide" />
+<img src='/storystrat.png' className="mb-20 md:mb-60 md:w-[40%] " alt="strystrt" />
 </div>
 
 </div>

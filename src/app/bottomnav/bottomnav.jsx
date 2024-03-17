@@ -32,14 +32,14 @@ const NavBar = (active) => {
         onClick={() => handleLinkClick('ideas')}
         className={` hover:text-blue-500 ${activeLink == 'ideas' ? 'text-blue-500' : ''}`}
       >
-       <div className='flex'>   <GiDeathZone  className='mt-1 mr-1'/> <div className=''>Ideas </div></div>
+       <div className='flex'>   <GiDeathZone  className='mt-1 mr-1'/> <div className=''>Investing </div></div>
       </Link>
       <Link
         href="/strategies"
         onClick={() => handleLinkClick('strategies')}
         className={` hover:text-blue-500 ${activeLink == 'strategies' ? 'text-blue-500' : ''}`}
       >
-       <div className='flex'>   < LiaHorseHeadSolid  className='mt-1 mr-1'/> <div className=''>Strategies </div></div>
+       <div className='flex'>   < LiaHorseHeadSolid  className='mt-1 mr-1'/> <div className=''>Trading </div></div>
 
       </Link>
       <Link

@@ -10,9 +10,9 @@ import { useState } from 'react'
 
 
 const buttonsData = [
-    { id: 'all', label: ' Stocks Intraday', left: 0, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'Fundamental', label: 'Futures', left: 131, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'Quantitative', label: 'Options', left: 265, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'all', label: 'Intraday', left: 0, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'Fundamental', label: 'F&O', left: 131, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+  
   ];
 
   const ideas = [
