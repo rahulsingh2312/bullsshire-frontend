@@ -10,8 +10,16 @@ export default function Navbar() {
 
   return (
     <div>
-       <div className="flex justify-center md:mt-20 mt-10  md:-ml-16 md:text-5xl text-2xl  " >  <div className={`${playfairDisplaySC.className} p-1  `} style={{backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)", WebkitBackgroundClip: 'text', // for Safari
-    color: 'transparent',}}> Bullsshire Traders </div > <div className=" ml-5">
+       <div className="flex mt-10  md:text-5xl text-2xl  mx-10" >  
+          <div className={`${playfairDisplaySC.className} w-full flex justify-between`} style={{backgroundImage: "linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)", WebkitBackgroundClip: 'text', // for Safari
+    color: 'transparent',}}> 
+        <div>Bullsshire Traders </div>
+            <div className="md:flex justify-evenly text-xl mt-4 hidden gap-5 ">
+            <Link href="/dashboard"  > <div>Portfolio</div> </Link>
+            <Link href="#aboutus" >   <div>About Us</div> </Link>
+            <Link href="#support" >     <div>Support</div> </Link>
+            </div>
+    </div > <div className="md:hidden ml-5">
        <Hamburger size={20} distance="sm" color="grey" duration={2} toggled={isOpen} toggle={setOpen} /></div>
 
     </div>	 
