@@ -10,9 +10,9 @@ import { useState } from 'react'
 
 
 const buttonsData = [
-    { id: 'all', label: 'All', left: 0, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'Fundamental', label: 'Fundamental', left: 131, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'Quantitative', label: 'quantitative', left: 265, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'all', label: ' Stocks Intraday', left: 0, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'Fundamental', label: 'Futures', left: 131, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'Quantitative', label: 'Options', left: 265, background: 'rgba(198.07, 105.19, 255, 0.09)' },
   ];
 
   const ideas = [
@@ -67,7 +67,7 @@ export default function Pages(){
 
 <div className={`${redRose.className}`}>
         <div className='  flex' >
-            <div className="md:ml-20  w-9/12 md:w-auto  mt-5" > <img  src='/starlogo.png' alt="logoig" />  </div>
+            <div className="md:ml-10  w-9/12 md:w-auto mt-5" > <img  src='/starlogo.png' alt="logoig" />  </div>
             <div className="hidden md:flex mt-40   md:justify-center md:text-4xl text-2xl ml-10">
         <div  >
 

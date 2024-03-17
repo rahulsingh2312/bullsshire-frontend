@@ -4,7 +4,7 @@ import React from 'react';
 import './Footer.css';
 import { playfairDisplaySC , oxygen } from '../font'
 import {   IoLocationSharp , IoCallOutline , IoMailOutline  , } from "react-icons/io5";
-import { FaRedditSquare , FaTelegram,FaTwitter , FaInstagram} from "react-icons/fa"
+import { FaRedditSquare , FaTelegram,FaTwitter , FaInstagram,FaYoutube} from "react-icons/fa"
 // import B4foot from './imgs/b4footer.png'
 export default function Footer () {
   return (
@@ -29,7 +29,8 @@ export default function Footer () {
 	 < FaInstagram className="md:mr-5 mr-2" />
 	  <FaTelegram className="md:mr-5 mr-2"/>
 	  <FaTwitter className="md:mr-5 mr-2" />
-    <FaRedditSquare/>
+    <FaRedditSquare className="md:mr-5 mr-2"/>
+    <FaYoutube  />
 	  </div>
 </div>
 </div>

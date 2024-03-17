@@ -7,6 +7,8 @@ import Xtraord from './xtraord.jsx'
 import Twitter from './twitter.jsx'
 import Faq from './faq.jsx'
 import Footer from './footer.jsx'
+import Emailsus from './emailsus.jsx'
+import About from "./about"
 export default function Hero() {
     return (
             //   <MantineProvider>
@@ -21,6 +23,8 @@ export default function Hero() {
    <Xtraord />
    <Twitter />
    <Faq />
+   <About/>
+   <Emailsus/>
    <Footer />
     </div>
         // {/* </MantineProvider> */}

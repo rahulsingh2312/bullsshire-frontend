@@ -6,10 +6,10 @@ import Bottomnav from '../bottomnav/bottomnav'
 import { redRose } from '../font';
 
 const buttonsData = [
-    { id: 'all', label: 'All', left: 0, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'medium', label: 'Medium', left: 131, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'short', label: 'Short', left: 265, background: 'rgba(198.07, 105.19, 255, 0.09)' },
-    { id: 'long', label: 'long', left: 399, background: 'rgba(198.07, 105.19, 255, 0.09)' }
+    { id: 'all', label: ' Long Term ', left: 0, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'medium', label: 'Short Term', left: 131, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'short', label: 'Buy on Dips', left: 265, background: 'rgba(198.07, 105.19, 255, 0.09)' },
+    { id: 'long', label: 'ETF Box', left: 399, background: 'rgba(198.07, 105.19, 255, 0.09)' }
 ];
 
 // Sample array of ideas
@@ -78,7 +78,7 @@ export default function Pages() {
                         onHover={() => handleButtonClick(button.id)}
                         onClick={() => handleButtonClick(button.id)}
                         style={{
-                            width: 116,
+                            width: 126,
                             height: 36,
                             position: 'absolute',
                             background: button.background,
