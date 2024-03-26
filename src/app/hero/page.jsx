@@ -9,6 +9,7 @@ import Faq from './faq.jsx'
 import Footer from './footer.jsx'
 import Emailsus from './emailsus.jsx'
 import About from "./about"
+import Whyin from "./whyin"
 export default function Hero() {
     return (
             //   <MantineProvider>
@@ -21,6 +22,7 @@ export default function Hero() {
 <div className={`${oxygen.className} flex justify-center leading-6 break-words mt-40 md:mt-96 ml-4   md:text-2xl text-1xl  md:hidden`}> Explore curated portfolios, embrace thematic strategies, and <br/>watch your wealth grow. Your journey to   financial  success begins here.</div>
    <Buttonforhero />
    <Xtraord />
+   <Whyin/>
    <Twitter />
    <Faq />
    <About/>
