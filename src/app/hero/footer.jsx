@@ -29,7 +29,7 @@ export default function Footer () {
 	 < FaInstagram className="md:mr-5 mr-2" />
 	  <FaTelegram className="md:mr-5 mr-2"/>
 	  <FaTwitter className="md:mr-5 mr-2" />
-    <FaRedditSquare className="md:mr-5 mr-2"/>
+
     <FaYoutube  />
 	  </div>
 </div>
